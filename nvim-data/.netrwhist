@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='D:\Projects\C_sharp_projects\work\appsettings\Models'
+let g:netrw_dirhist_3='D:/Projects/C_sharp_projects/work/appsettings/Models'
+let g:netrw_dirhist_2='D:/Projects/C_sharp_projects/work/appsettings'
+let g:netrw_dirhist_1='D:\Projects\C_sharp_projects\work\appsettings'
+let g:netrw_dirhist_0='C:\Users\horrest\interview'
+let g:netrw_dirhist_9='C:\Users\horrest\AppData\Local\nvim\after\plugin'
+let g:netrw_dirhist_8='C:/Users/horrest/AppData/Local/nvim/after/plugin'
+let g:netrw_dirhist_7='C:/Users/horrest/AppData/Local/nvim/after'
+let g:netrw_dirhist_6='C:\Users\horrest\AppData\Local\nvim'
+let g:netrw_dirhist_5='C:\Users\horrest\interview'

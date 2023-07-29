@@ -1,0 +1,4 @@
+[INFO  18.07.2023 1:01:08] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=csharp-language-server) {}
+[INFO  18.07.2023 1:01:13] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=csharpier) {}
+[INFO  18.07.2023 1:01:32] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=csharpier)
+[INFO  18.07.2023 1:02:15] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=csharp-language-server)
