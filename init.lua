@@ -2,9 +2,6 @@ require("horrest")
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
--- Install package manager
---    https://github.com/folke/lazy.nvim
---    `:help lazy.nvim.txt` for more info
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system {
@@ -18,24 +15,19 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
--- NOTE: Here is where you install your plugins.
---  You can configure plugins using the `config` key.
---
---  You can also configure plugins after the setup call,
---    as they will be available in your neovim runtime.
+--plugin installing
 require('lazy').setup({
-  -- NOTE: First, some plugins that don't require any configuration
-
   -- Git related plugins
   'tpope/vim-fugitive',
   'tpope/vim-rhubarb',
+  --db-related
   'tpope/vim-dadbod',
   'kristijanhusak/vim-dadbod-ui',
+  'kristijanhusak/vim-dadbod-completion', --doesn't work on Windows. Nvm, I don't really care.
   -- Detect tabstop and shiftwidth automatically
   'tpope/vim-sleuth',
 
   -- NOTE: This is where your plugins related to LSP can be installed.
-  --  The configuration is done below. Search for lspconfig to find it below.
   {
     -- LSP Configuration & Plugins
     'neovim/nvim-lspconfig',
@@ -109,15 +101,23 @@ require('lazy').setup({
       end,
     },
   },
-
   {
-    -- Theme inspired by Atom
-    'navarasu/onedark.nvim',
+    "xero/miasma.nvim",
+    lazy = false,
     priority = 1000,
     config = function()
-      vim.cmd.colorscheme 'onedark'
+      vim.cmd("colorscheme miasma")
     end,
   },
+
+ -- {
+    -- Theme inspired by Atom
+ --   'navarasu/onedark.nvim',
+ --   priority = 1000,
+ --   config = function()
+ --     vim.cmd.colorscheme 'onedark'
+ --   end,
+ -- },
 
   {
     -- Set lualine as statusline
